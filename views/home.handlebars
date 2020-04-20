@@ -1,0 +1,66 @@
+<section class="intro">
+
+    <h1>Start Your <br> Adventure Now!</h1>
+
+    <form id="form" method="POST" action="/room/search" class="search-form">
+        <p>Enter your dates to find available rooms.</p>
+
+        <select class="select" name="location">
+            <option value="">Please select a city</option>
+            <option value="Toronto">Toronto</option>
+            <option value="Banff">Banff</option>
+            <option value="Vancouver">Vancouver</option>
+            <option value="Winnipeg">Winnipeg</option>
+        </select>
+
+        <input type="text" name="checkIn" Placeholder="Check-in" class="date">
+
+        <input type="text" name="checkOut" Placeholder="Check-out" class="date">
+
+        <select class="select" name="guest">
+            <option value="1">1 guest</option>
+            <option value="2">2 guests</option>
+            <option value="3">3 guests</option>
+            <option value="4">4 guests</option>
+            <option value="5">5 guests</option>
+        </select>
+
+        <div id="divButton" class="btn-search">
+            <input type="submit" id="findButton" value="Check" class="search">
+        </div>
+    </form>
+
+</section>
+
+<section id="promotion" class="promotions">
+    <h2>Our Offers for <br>Your Perfect Getaway</h2>
+    <div id="promotionGrid" class="promotions-container">
+        {{#each promotions}}
+        <div class="offer-container">
+            <img src="{{this.image}}" alt="{{this.title}}">
+            <p class="title">{{this.title}}</p>
+            <p class="description">{{this.description}}</p>
+            <p class="duration"><i class="far fa-clock"></i> {{this.duration}}</p>
+            <p class="price">{{this.price}}</p>
+            <p class="valid">Valid Until {{this.expiration}}</p>
+        </div>
+
+        {{/each}}
+</section>
+
+{{!-- <section id="informational">
+    <h1>EARN MONEY | HOST TIPS</h1>
+    <div id="informationalGrid">
+        <div>
+            <iframe width="524" height="300" src="https://www.youtube.com/embed/05k0LI9UE1U?controls=0" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div>
+            <h2>
+                In this video, you will find useful tips on how to become a super host, increasing
+                the money you can make.
+            </h2>
+        </div>
+    </div>
+</section> --}}

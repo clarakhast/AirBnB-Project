@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title>{{title}}</title>
+</head>
+<body>
+        <header>
+        {{!-- <h1>{{headingInfo}}</h1> --}}
+
+            <nav class="navbar">
+                <div class="logo-container">
+                    <a href="#" class="logo"><img src="../img/logo.png" alt="airbnb logo"></a>
+                </div>
+
+                <div class="hamburger-menu">
+                    <button>
+                        <i class="fas  fa-2x fa-bars"></i>
+                    </button>
+                </div>
+
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Rooms</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">SignUp</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        {{!-- <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/contact-us">Contact Us</a></li>
+                <li><a href="/products">Product</a></li>
+            </ul>
+        </nav> --}}
+        <main>
+                {{{body}}}
+        </main>
+        <footer>
+            <p>
+                Created by Clara Khast 2020
+            </p>
+        </footer>
+</body>
+</html>

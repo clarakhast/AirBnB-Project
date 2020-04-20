@@ -1,0 +1,207 @@
+/* ***********************************
+                GENERAL
+*************************************/
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    background-color: transparent;
+    position: absolute;
+    top:0;
+    z-index: 2;
+    width: 100%;
+}
+
+/* ***********************************
+                NAVBAR
+*************************************/
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    padding: 0 3em;
+    margin: 0 5em;
+    border-bottom: 0.5px solid grey;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em;
+    align-self: center;
+}
+
+.hamburger-menu {
+    display:none;
+}
+
+.navbar ul a{
+    text-decoration: none;
+    color:white;
+    padding: 1em 1em 2.2em 1em;
+    font-size: 1.1em;
+}
+
+.navbar ul a:hover, .navbar ul a:active {
+    border-bottom: 1px solid white;
+}
+
+.logo-container img{
+    height: 6em;
+    padding: 1em;
+}
+
+/* ***********************************
+            INTRO SECTION
+*************************************/
+.intro {
+    background-image: url('../img/3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35em;
+    background-position: top center;
+    color: white;
+    padding: 10em 5em;
+}
+
+h1 {
+    font-size: 2em;
+    width: 40%;
+    line-height: 1.5em;
+}
+
+/* ***********************************
+            SEARCH FORM
+*************************************/
+
+select {
+    border: 1px solid grey;
+    border-radius: 0.2em;
+    padding: 0.4em;
+}
+
+.date {
+    background-image:url('../img/calendar.png');
+    background-position: 5% 50%;
+    background-repeat: no-repeat;
+    background-size: 1em;
+    border: 1px solid grey;
+    border-radius: 0.2em;
+    padding: 0.5em;
+}
+
+.date::placeholder {
+    padding-left: 1.5em;
+}
+
+.btn-search {
+    display: inline-block
+}
+
+.search {
+    background-color: #EE875E;
+    color: white;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border: none;
+    margin-left: 1em;
+}
+
+.search:hover {
+    background-color: rgb(245, 103, 47);
+    cursor: pointer;
+}
+
+.search-form {
+    margin-top: 2em;
+    padding: 1em;
+    background-color: rgba(178, 144, 54,0.7);
+    display: inline-block;
+}
+
+.search-form p {
+    margin-bottom: 1em;
+}
+
+/* ***********************************
+              PROMOTIONS
+*************************************/
+
+.promotions {
+    margin: 2em;
+}
+
+h2{
+    text-align: center;
+    margin: 2em;
+    line-height: 1.4em;
+}
+
+.promotions-container {
+    color:white;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:1.3em;
+
+}
+
+.promotions-container img{
+    width:100%;
+    height: 15em;
+    border: 0px solid transparent;
+    border-radius: 1em;
+    box-shadow: 0 0 0.5em grey;
+    margin: 0.3em;
+    
+}
+
+.offer-container p{
+    padding-left:0.5em;
+}
+
+.promotions-container p {
+    color: black;
+}
+
+
+/* ***********************************
+            MEDIA QUERIES
+*************************************/
+
+@media only screen and (max-width: 64em) {
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .navbar ul{
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        padding: 1em;
+        align-self: center;
+    }
+
+    .hamburger-menu button {
+        color: white;
+        border: none;
+        background-color: transparent;
+    }
+
+    .hamburger-menu:hover {
+        cursor: pointer;
+    }
+}
