@@ -62,7 +62,7 @@ header {
             INTRO SECTION
 *************************************/
 .intro {
-    background-image: url('../img/3.jpg');
+    background-image: url('../img/17.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 35em;
@@ -131,6 +131,124 @@ select {
 }
 
 /* ***********************************
+            ABOUT SECTION
+*************************************/
+.about-us {
+    padding: 0 3em;
+}
+
+.about-container {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    padding:0 2em;
+    text-align: center;
+
+}
+
+.about-container p i {
+    color: #EE875E;
+    padding: 0.5em 0;
+    display: block;
+    border: 1px solid #EE875E;
+    width: 2.1em;
+    border-radius: 100%;
+    margin: 0.5em auto;
+}
+
+.about-container p {
+    width: 10em;
+    margin: 0 auto;
+    font-size: 1.2em;
+    color: #3D3C4A;
+}
+
+/* ***********************************
+        INFORMATIONAL SECTION
+*************************************/
+.information-container {
+    margin: 2em 5em;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    margin: 2em auto;
+    width: 70%;
+}
+
+.info-img-wrapper {
+    text-align: center;
+}
+
+.info-img {
+    width: 80%;
+    border: 0px solid transparent;
+    border-radius: 1em;
+    box-shadow: 0 0 0.5em grey;
+}
+
+.info-text{
+    color: #3D3C4A;
+    font-size: 1.1em;
+    padding: 0 1em;
+    line-height: 1.3em;
+}
+
+.information-container iframe {
+    width: 90%;
+    height: 14em;
+    border: 0px solid transparent;
+    border-radius: 1em;
+    box-shadow: 0 0 0.5em grey;
+    margin-left: 1.5em;
+}
+
+h3 {
+    margin-bottom: 1em;
+    color: #016FB9;
+}
+
+/* ***********************************
+            BANNER SECTION
+*************************************/
+.banner {
+    background-image: url(../img/16.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 20em;
+    padding: 2em;
+    margin: 2em 0;
+}
+
+.signup-btn {
+    background-color: transparent;
+    color:white;
+    border: 1px solid white;
+    padding: 1em;
+    display: block;
+    width: 8em;
+    text-decoration: none;
+    text-align: center;
+    margin:1em 2.3em;
+}
+
+
+.banner h2 {
+    color:white;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+.banner p{
+    color: white;
+    padding-left: 2.3em;
+    font-size: 1.2em;
+}
+
+/* ***********************************
               PROMOTIONS
 *************************************/
 
@@ -142,6 +260,7 @@ h2{
     text-align: center;
     margin: 2em;
     line-height: 1.4em;
+    color: #89023E;
 }
 
 .promotions-container {
@@ -152,10 +271,20 @@ h2{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap:1.3em;
 
+    cursor: pointer;
+
+}
+
+.offer-container:hover {
+    transform: scale(1.1);
+}
+
+.promotions-container .price {
+    font-weight: bold;
 }
 
 .promotions-container img{
-    width:100%;
+    width:18em;
     height: 15em;
     border: 0px solid transparent;
     border-radius: 1em;
@@ -172,6 +301,52 @@ h2{
     color: black;
 }
 
+.promotions-container .title {
+    font-size: 1.2em;
+    margin:0.4em 0;
+    font-weight: bold;
+}
+
+.description {
+    margin-bottom:0.4em;
+}
+
+.price-container {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 0.4em;
+}
+
+.promotions-container .valid {
+    color:#016FB9;
+    font-weight: bold;
+}
+
+/* ***********************************
+               FOOTER
+*************************************/
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    background-image: url(../img/3.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: white;
+    padding: 2em;
+    height: 25em;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
 
 /* ***********************************
             MEDIA QUERIES
