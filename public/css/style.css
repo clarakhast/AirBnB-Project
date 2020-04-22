@@ -325,28 +325,93 @@ h2{
 /* ***********************************
                FOOTER
 *************************************/
-footer {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
+footer{
     background-image: url(../img/3.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
     color: white;
-    padding: 2em;
+    padding: 5em 0 0 0;
     height: 25em;
+}
+
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 5em;
+
 }
 
 footer ul {
     list-style-type: none;
 }
 
+footer ul li{
+    margin-bottom: 1.3em;
+}
+
 footer ul li a {
     text-decoration: none;
     color: white;
 }
+
+footer ul li a:hover {
+    color: #EE875E;
+}
+
+.newsletter p{
+    margin-bottom: 1em;   
+    line-height: 1.2em;
+}
+
+.f-heading {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.newsletter input {
+    /* */
+    padding: 0.5em;
+    margin-bottom: 2em;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 80%;
+}
+
+.subs-btn {
+    margin-left: -1em;
+    padding: 0.5em 0.7em;
+    margin-bottom: 2em;
+    border:1px solid #016FB9;
+    border-radius: 3px;
+    background-color: #016FB9;
+    color: white;
+}
+
+.subs-btn:hover {
+    background-color: rgb(4, 83, 136);
+    cursor: pointer;
+}
+
+.social-media a{
+    text-decoration: none;
+    color:white;
+    font-size: 2em;
+    padding:0.25em;
+}
+
+.social-media a:hover{
+    color:#EE875E;
+}
+
+.copyright {
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.384);
+    text-align: center;
+}
+
+
 
 /* ***********************************
             MEDIA QUERIES
